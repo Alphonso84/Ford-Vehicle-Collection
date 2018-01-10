@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ford background-1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="plM-Dq-PxR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ford" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="plM-Dq-PxR">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="813"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="adM-ON-ECV">
@@ -243,6 +243,7 @@
     <resources>
         <image name="Cars" width="25" height="25"/>
         <image name="EV" width="25" height="25"/>
+        <image name="Ford" width="213" height="320"/>
         <image name="SUV" width="25" height="25"/>
         <image name="ford background-1" width="240" height="366"/>
         <image name="performance" width="25" height="25"/>

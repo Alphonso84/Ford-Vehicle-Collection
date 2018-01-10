@@ -21,6 +21,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     //CollectionView & CollectionViewCell Setup
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+         myMotionEffect(view: collectionView, min: -30, max: 30)
+        
         return CarCollection.count
     }
     
@@ -29,15 +32,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.cellImage.image = CarCollection[indexPath.row].pic
         cell.nameLabel.text = "\(CarCollection[indexPath.row].year) \(CarCollection[indexPath.row].name)"
         cell.priceLabel.text = CarCollection[indexPath.row].price
-        
-        //Applies Motion Effects to Three Views within Cell:
-        //PROBLEM MOTION EFFECT COMPOUNDS AS CELL RELOADS
-        
-            myMotionEffect(view: cell.cellImage, min: -20, max: 20)
-        print("called")
-            myMotionEffect(view: cell.nameLabel, min: -20, max: 20)
-            myMotionEffect(view: cell.priceLabel, min: -20, max: 20)
-        
+    
         return cell
     }
     
@@ -51,7 +46,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         CarCollection.append(CMax)
         CarCollection.append(Mustang)
         CarCollection.append(Taurus)
-      
+        
         
     }
     
