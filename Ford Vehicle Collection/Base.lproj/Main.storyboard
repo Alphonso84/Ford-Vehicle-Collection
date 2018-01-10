@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PlH-LT-71g">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,28 +15,62 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ford_Vehicle_Collection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ford background-1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="plM-Dq-PxR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="plM-Dq-PxR" secondAttribute="trailing" id="5Rj-L3-E1b"/>
+                            <constraint firstAttribute="bottom" secondItem="plM-Dq-PxR" secondAttribute="bottom" id="9Zz-ix-qdf"/>
+                            <constraint firstItem="plM-Dq-PxR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Avh-HM-24q"/>
+                            <constraint firstItem="plM-Dq-PxR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sk6-IC-Dfq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="CARS" id="qph-bT-NeH"/>
+                    <tabBarItem key="tabBarItem" title="CARS" image="Cars" selectedImage="Cars" id="qph-bT-NeH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="82"/>
+            <point key="canvasLocation" x="52" y="81.2807881773399"/>
+        </scene>
+        <!--SUV-->
+        <scene sceneID="Yqy-bU-5R9">
+            <objects>
+                <viewController id="eTb-On-sC8" customClass="SUVCrossover" customModule="Ford_Vehicle_Collection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jgz-X0-psX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ford background-1" translatesAutoresizingMaskIntoConstraints="NO" id="C5w-j2-8gC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="leG-Hq-bPz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SUV" image="SUV" selectedImage="SUV" id="GX5-8D-MfK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyb-pq-0Au" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159.19999999999999" y="799.50738916256159"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rym-dQ-juR">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PlH-LT-71g" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8jE-gy-NsY">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="8jE-gy-NsY">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="WMt-Xw-m1b"/>
+                        <segue destination="eTb-On-sC8" kind="relationship" relationship="viewControllers" id="G1U-9t-nKE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPE-mD-7cI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -44,4 +78,9 @@
             <point key="canvasLocation" x="-681" y="83"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cars" width="25" height="25"/>
+        <image name="SUV" width="25" height="25"/>
+        <image name="ford background-1" width="240" height="366"/>
+    </resources>
 </document>
