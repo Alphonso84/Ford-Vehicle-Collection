@@ -30,10 +30,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.nameLabel.text = "\(CarCollection[indexPath.row].year) \(CarCollection[indexPath.row].name)"
         cell.priceLabel.text = CarCollection[indexPath.row].price
         
-        //Applies Motion Effects to Three Views within Cell
-        myMotionEffect(view: cell.cellImage, min: -20, max: 20)
-        myMotionEffect(view: cell.nameLabel, min: -20, max: 20)
-        myMotionEffect(view: cell.priceLabel, min: -20, max: 20)
+        //Applies Motion Effects to Three Views within Cell:
+        //PROBLEM MOTION EFFECT COMPOUNDS AS CELL RELOADS
+        
+            myMotionEffect(view: cell.cellImage, min: -20, max: 20)
+        print("called")
+            myMotionEffect(view: cell.nameLabel, min: -20, max: 20)
+            myMotionEffect(view: cell.priceLabel, min: -20, max: 20)
         
         return cell
     }
@@ -48,11 +51,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         CarCollection.append(CMax)
         CarCollection.append(Mustang)
         CarCollection.append(Taurus)
-       
+      
         
     }
+    
     //MotionEffect Method
     func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {
+       
         
         let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
         xMotion.minimumRelativeValue = min
