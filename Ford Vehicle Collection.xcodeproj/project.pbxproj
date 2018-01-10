@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		89062E8A2005EECE00B28DB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062E892005EECE00B28DB2 /* AppDelegate.swift */; };
-		89062E8C2005EECE00B28DB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062E8B2005EECE00B28DB2 /* ViewController.swift */; };
 		89062E8F2005EECE00B28DB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89062E8D2005EECE00B28DB2 /* Main.storyboard */; };
 		89062E912005EECE00B28DB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89062E902005EECE00B28DB2 /* Assets.xcassets */; };
 		89062E942005EECE00B28DB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89062E922005EECE00B28DB2 /* LaunchScreen.storyboard */; };
+		89062EAB2005F1E600B28DB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EA92005F1E600B28DB2 /* ViewController.swift */; };
+		89062EAE2005F23F00B28DB2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EAD2005F23F00B28DB2 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89062E862005EECE00B28DB2 /* Ford Vehicle Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ford Vehicle Collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89062E892005EECE00B28DB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89062E8B2005EECE00B28DB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89062E8E2005EECE00B28DB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89062E902005EECE00B28DB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89062E932005EECE00B28DB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89062E952005EECE00B28DB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89062EA92005F1E600B28DB2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89062EAD2005F23F00B28DB2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,70 @@
 			isa = PBXGroup;
 			children = (
 				89062E892005EECE00B28DB2 /* AppDelegate.swift */,
-				89062E8B2005EECE00B28DB2 /* ViewController.swift */,
+				89062EAC2005F23F00B28DB2 /* Model */,
+				89062EA42005F1E600B28DB2 /* View */,
 				89062E8D2005EECE00B28DB2 /* Main.storyboard */,
 				89062E902005EECE00B28DB2 /* Assets.xcassets */,
 				89062E922005EECE00B28DB2 /* LaunchScreen.storyboard */,
 				89062E952005EECE00B28DB2 /* Info.plist */,
 			);
 			path = "Ford Vehicle Collection";
+			sourceTree = "<group>";
+		};
+		89062EA42005F1E600B28DB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89062EA52005F1E600B28DB2 /* Hybrids & EVs */,
+				89062EA62005F1E600B28DB2 /* Performance Vehicles */,
+				89062EA72005F1E600B28DB2 /* Trucks & Vans */,
+				89062EA82005F1E600B28DB2 /* Cars */,
+				89062EAA2005F1E600B28DB2 /* SUVs & Crossovers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89062EA52005F1E600B28DB2 /* Hybrids & EVs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Hybrids & EVs";
+			sourceTree = "<group>";
+		};
+		89062EA62005F1E600B28DB2 /* Performance Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Performance Vehicles";
+			sourceTree = "<group>";
+		};
+		89062EA72005F1E600B28DB2 /* Trucks & Vans */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Trucks & Vans";
+			sourceTree = "<group>";
+		};
+		89062EA82005F1E600B28DB2 /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				89062EA92005F1E600B28DB2 /* ViewController.swift */,
+			);
+			path = Cars;
+			sourceTree = "<group>";
+		};
+		89062EAA2005F1E600B28DB2 /* SUVs & Crossovers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SUVs & Crossovers";
+			sourceTree = "<group>";
+		};
+		89062EAC2005F23F00B28DB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89062EAD2005F23F00B28DB2 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +195,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89062E8C2005EECE00B28DB2 /* ViewController.swift in Sources */,
+				89062EAE2005F23F00B28DB2 /* Model.swift in Sources */,
+				89062EAB2005F1E600B28DB2 /* ViewController.swift in Sources */,
 				89062E8A2005EECE00B28DB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
