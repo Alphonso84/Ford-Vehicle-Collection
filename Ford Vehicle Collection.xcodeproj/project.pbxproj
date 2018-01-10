@@ -13,6 +13,10 @@
 		89062E942005EECE00B28DB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89062E922005EECE00B28DB2 /* LaunchScreen.storyboard */; };
 		89062EAB2005F1E600B28DB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EA92005F1E600B28DB2 /* ViewController.swift */; };
 		89062EAE2005F23F00B28DB2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EAD2005F23F00B28DB2 /* Model.swift */; };
+		89062EB02005F33D00B28DB2 /* Trucks & Vans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EAF2005F33D00B28DB2 /* Trucks & Vans.swift */; };
+		89062EB22005F37700B28DB2 /* Performance Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EB12005F37700B28DB2 /* Performance Vehicles.swift */; };
+		89062EB42005F3A300B28DB2 /* HybridEVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EB32005F3A300B28DB2 /* HybridEVs.swift */; };
+		89062EB62005F3D400B28DB2 /* SUVCrossovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EB52005F3D400B28DB2 /* SUVCrossovers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		89062E952005EECE00B28DB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89062EA92005F1E600B28DB2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89062EAD2005F23F00B28DB2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		89062EAF2005F33D00B28DB2 /* Trucks & Vans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trucks & Vans.swift"; sourceTree = "<group>"; };
+		89062EB12005F37700B28DB2 /* Performance Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Performance Vehicles.swift"; sourceTree = "<group>"; };
+		89062EB32005F3A300B28DB2 /* HybridEVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridEVs.swift; sourceTree = "<group>"; };
+		89062EB52005F3D400B28DB2 /* SUVCrossovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUVCrossovers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 		89062EA52005F1E600B28DB2 /* Hybrids & EVs */ = {
 			isa = PBXGroup;
 			children = (
+				89062EB32005F3A300B28DB2 /* HybridEVs.swift */,
 			);
 			path = "Hybrids & EVs";
 			sourceTree = "<group>";
@@ -89,6 +98,7 @@
 		89062EA62005F1E600B28DB2 /* Performance Vehicles */ = {
 			isa = PBXGroup;
 			children = (
+				89062EB12005F37700B28DB2 /* Performance Vehicles.swift */,
 			);
 			path = "Performance Vehicles";
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 		89062EA72005F1E600B28DB2 /* Trucks & Vans */ = {
 			isa = PBXGroup;
 			children = (
+				89062EAF2005F33D00B28DB2 /* Trucks & Vans.swift */,
 			);
 			path = "Trucks & Vans";
 			sourceTree = "<group>";
@@ -111,6 +122,7 @@
 		89062EAA2005F1E600B28DB2 /* SUVs & Crossovers */ = {
 			isa = PBXGroup;
 			children = (
+				89062EB52005F3D400B28DB2 /* SUVCrossovers.swift */,
 			);
 			path = "SUVs & Crossovers";
 			sourceTree = "<group>";
@@ -195,9 +207,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89062EB02005F33D00B28DB2 /* Trucks & Vans.swift in Sources */,
 				89062EAE2005F23F00B28DB2 /* Model.swift in Sources */,
+				89062EB22005F37700B28DB2 /* Performance Vehicles.swift in Sources */,
 				89062EAB2005F1E600B28DB2 /* ViewController.swift in Sources */,
+				89062EB42005F3A300B28DB2 /* HybridEVs.swift in Sources */,
 				89062E8A2005EECE00B28DB2 /* AppDelegate.swift in Sources */,
+				89062EB62005F3D400B28DB2 /* SUVCrossovers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
