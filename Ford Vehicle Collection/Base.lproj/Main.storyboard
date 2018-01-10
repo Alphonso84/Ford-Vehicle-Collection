@@ -32,20 +32,20 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="e50-7R-jvM">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="e50-7R-jvM" customClass="CarCell" customModule="Ford_Vehicle_Collection" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="81" width="315" height="503"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="315" height="503"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WdE-d5-QkB">
+                                                <visualEffectView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WdE-d5-QkB">
                                                     <rect key="frame" x="0.0" y="0.0" width="315" height="503"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xNh-nG-8j7">
                                                         <rect key="frame" x="0.0" y="0.0" width="315" height="503"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-bw-i0U">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-bw-i0U">
                                                                 <rect key="frame" x="17" y="161" width="281" height="182"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="182" id="1Le-M0-h13"/>
@@ -92,8 +92,17 @@
                                             <constraint firstItem="WdE-d5-QkB" firstAttribute="leading" secondItem="e50-7R-jvM" secondAttribute="leading" id="WFu-fM-ZZf"/>
                                             <constraint firstAttribute="trailing" secondItem="WdE-d5-QkB" secondAttribute="trailing" id="eAr-36-MSM"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="cellImage" destination="gwR-bw-i0U" id="d5G-OC-caU"/>
+                                            <outlet property="nameLabel" destination="O8W-kK-0hm" id="N2M-AV-91v"/>
+                                            <outlet property="priceLabel" destination="4e9-lY-bbe" id="wLu-bu-hIm"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rkg-ia-KWW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ynU-rZ-uL9"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -143,6 +152,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PlH-LT-71g" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="8jE-gy-NsY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
