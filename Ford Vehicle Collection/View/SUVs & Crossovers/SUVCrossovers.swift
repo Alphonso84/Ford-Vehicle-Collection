@@ -23,7 +23,7 @@ class SUVViewController: UIViewController, UICollectionViewDelegate, UICollectio
     //CollectionView & CollectionViewCell Setup
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-       myMotionEffect(view: collectionView, min: -30, max: 30)
+       myMotionEffect(view: collectionView, min: -32, max: 32)
         
         return SUVCollection.count
     }
