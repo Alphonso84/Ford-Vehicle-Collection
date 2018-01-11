@@ -8,9 +8,9 @@
 
 import UIKit
 
-var CarCollection = [Vehicle]()
-
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    var CarCollection = [Vehicle]()
     //Creating Car instances of type Vehicle. These are added to CarCollection array in ViewDidLoad
     let Fiesta = Vehicle.init(pic:#imageLiteral(resourceName: "Fiesta") , year: 2018, name: "Fiesta", price: "From $14,115 ")
     let Focus = Vehicle.init(pic: #imageLiteral(resourceName: "Focus"), year: 2018, name: "Focus", price: "From $17,860")
@@ -36,7 +36,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
-  
     override func viewDidLoad() {
         super.viewDidLoad()
        
