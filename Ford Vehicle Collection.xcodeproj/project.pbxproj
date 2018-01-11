@@ -18,6 +18,7 @@
 		89062EB42005F3A300B28DB2 /* HybridEVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EB32005F3A300B28DB2 /* HybridEVs.swift */; };
 		89062EB62005F3D400B28DB2 /* SUVCrossovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EB52005F3D400B28DB2 /* SUVCrossovers.swift */; };
 		89062EB820060EC900B28DB2 /* CarCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EB720060EC900B28DB2 /* CarCellView.swift */; };
+		897418A120073E9B00E0595E /* SUVCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897418A020073E9B00E0595E /* SUVCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		89062EB32005F3A300B28DB2 /* HybridEVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridEVs.swift; sourceTree = "<group>"; };
 		89062EB52005F3D400B28DB2 /* SUVCrossovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUVCrossovers.swift; sourceTree = "<group>"; };
 		89062EB720060EC900B28DB2 /* CarCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellView.swift; sourceTree = "<group>"; };
+		897418A020073E9B00E0595E /* SUVCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUVCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				89062EB52005F3D400B28DB2 /* SUVCrossovers.swift */,
+				897418A020073E9B00E0595E /* SUVCellView.swift */,
 			);
 			path = "SUVs & Crossovers";
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				89062EB02005F33D00B28DB2 /* Trucks & Vans.swift in Sources */,
 				89062EAE2005F23F00B28DB2 /* Model.swift in Sources */,
+				897418A120073E9B00E0595E /* SUVCellView.swift in Sources */,
 				89062EB22005F37700B28DB2 /* Performance Vehicles.swift in Sources */,
 				89062EAB2005F1E600B28DB2 /* ViewController.swift in Sources */,
 				89062EB42005F3A300B28DB2 /* HybridEVs.swift in Sources */,

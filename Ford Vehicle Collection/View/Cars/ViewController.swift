@@ -39,6 +39,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
   
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         CarCollection.removeAll()
         CarCollection.append(Fiesta)
         CarCollection.append(Focus)
@@ -46,7 +47,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         CarCollection.append(CMax)
         CarCollection.append(Mustang)
         CarCollection.append(Taurus)
-        
+      
         
     }
     
