@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890003C72009493700E0B986 /* PerformanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890003C62009493700E0B986 /* PerformanceCell.swift */; };
 		89062E8A2005EECE00B28DB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062E892005EECE00B28DB2 /* AppDelegate.swift */; };
 		89062E8F2005EECE00B28DB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89062E8D2005EECE00B28DB2 /* Main.storyboard */; };
 		89062E912005EECE00B28DB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89062E902005EECE00B28DB2 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890003C62009493700E0B986 /* PerformanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceCell.swift; sourceTree = "<group>"; };
 		89062E862005EECE00B28DB2 /* Ford Vehicle Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ford Vehicle Collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89062E892005EECE00B28DB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89062E8E2005EECE00B28DB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				89062EB12005F37700B28DB2 /* Performance Vehicles.swift */,
+				890003C62009493700E0B986 /* PerformanceCell.swift */,
 			);
 			path = "Performance Vehicles";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890003C72009493700E0B986 /* PerformanceCell.swift in Sources */,
 				89062EB02005F33D00B28DB2 /* Trucks & Vans.swift in Sources */,
 				89062EAE2005F23F00B28DB2 /* Model.swift in Sources */,
 				897418A120073E9B00E0595E /* SUVCellView.swift in Sources */,
