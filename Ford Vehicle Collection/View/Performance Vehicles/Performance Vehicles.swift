@@ -59,14 +59,6 @@ class PerformanceVehicles: UIViewController, UICollectionViewDelegate, UICollect
         view.addMotionEffect(motionEffectGroup)
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
 }
 
 
