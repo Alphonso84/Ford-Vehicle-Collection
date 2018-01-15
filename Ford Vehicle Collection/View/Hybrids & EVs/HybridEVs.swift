@@ -31,12 +31,12 @@ class HybridEVs: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     }
     
+    
     override func viewDidLoad() {
-         
-        UIStatusBarStyle.lightContent
-      
-            //return UIStatusBarStyle.default   // Make dark again
         super.viewDidLoad()
+       
+        UIStatusBarStyle.lightContent
+        //return UIStatusBarStyle.default   // Make dark again
         HybridCollection.removeAll()
         HybridCollection.append(FusionHybrid)
         HybridCollection.append(CMaxEnergy)

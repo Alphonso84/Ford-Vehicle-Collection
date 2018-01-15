@@ -22,6 +22,7 @@
 		89062EB820060EC900B28DB2 /* CarCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EB720060EC900B28DB2 /* CarCellView.swift */; };
 		8930EE0A200C9B2E00FC6C95 /* HybridEVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930EE09200C9B2E00FC6C95 /* HybridEVCell.swift */; };
 		8930EE0D200CD12000FC6C95 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930EE0C200CD12000FC6C95 /* MenuView.swift */; };
+		8930EE10200D55F200FC6C95 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930EE0F200D55F200FC6C95 /* WebViewController.swift */; };
 		897418A120073E9B00E0595E /* SUVCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897418A020073E9B00E0595E /* SUVCellView.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		89062EB720060EC900B28DB2 /* CarCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellView.swift; sourceTree = "<group>"; };
 		8930EE09200C9B2E00FC6C95 /* HybridEVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridEVCell.swift; sourceTree = "<group>"; };
 		8930EE0C200CD12000FC6C95 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		8930EE0F200D55F200FC6C95 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		897418A020073E9B00E0595E /* SUVCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUVCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 		89062EA42005F1E600B28DB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8930EE0E200D54ED00FC6C95 /* WebView */,
 				8930EE0B200CD0F000FC6C95 /* Menu */,
 				89062EA52005F1E600B28DB2 /* Hybrids & EVs */,
 				89062EA62005F1E600B28DB2 /* Performance Vehicles */,
@@ -159,6 +162,14 @@
 				8930EE0C200CD12000FC6C95 /* MenuView.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		8930EE0E200D54ED00FC6C95 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				8930EE0F200D55F200FC6C95 /* WebViewController.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +255,7 @@
 				89062EB820060EC900B28DB2 /* CarCellView.swift in Sources */,
 				89062E8A2005EECE00B28DB2 /* AppDelegate.swift in Sources */,
 				890003C9200B074A00E0B986 /* TruckCellView.swift in Sources */,
+				8930EE10200D55F200FC6C95 /* WebViewController.swift in Sources */,
 				8930EE0A200C9B2E00FC6C95 /* HybridEVCell.swift in Sources */,
 				89062EB62005F3D400B28DB2 /* SUVCrossovers.swift in Sources */,
 			);
