@@ -20,6 +20,7 @@
 		89062EB42005F3A300B28DB2 /* HybridEVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EB32005F3A300B28DB2 /* HybridEVs.swift */; };
 		89062EB62005F3D400B28DB2 /* SUVCrossovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EB52005F3D400B28DB2 /* SUVCrossovers.swift */; };
 		89062EB820060EC900B28DB2 /* CarCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89062EB720060EC900B28DB2 /* CarCellView.swift */; };
+		8930EE0A200C9B2E00FC6C95 /* HybridEVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930EE09200C9B2E00FC6C95 /* HybridEVCell.swift */; };
 		897418A120073E9B00E0595E /* SUVCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897418A020073E9B00E0595E /* SUVCellView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		89062EB32005F3A300B28DB2 /* HybridEVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridEVs.swift; sourceTree = "<group>"; };
 		89062EB52005F3D400B28DB2 /* SUVCrossovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUVCrossovers.swift; sourceTree = "<group>"; };
 		89062EB720060EC900B28DB2 /* CarCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellView.swift; sourceTree = "<group>"; };
+		8930EE09200C9B2E00FC6C95 /* HybridEVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridEVCell.swift; sourceTree = "<group>"; };
 		897418A020073E9B00E0595E /* SUVCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUVCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				89062EB32005F3A300B28DB2 /* HybridEVs.swift */,
+				8930EE09200C9B2E00FC6C95 /* HybridEVCell.swift */,
 			);
 			path = "Hybrids & EVs";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				89062EB820060EC900B28DB2 /* CarCellView.swift in Sources */,
 				89062E8A2005EECE00B28DB2 /* AppDelegate.swift in Sources */,
 				890003C9200B074A00E0B986 /* TruckCellView.swift in Sources */,
+				8930EE0A200C9B2E00FC6C95 /* HybridEVCell.swift in Sources */,
 				89062EB62005F3D400B28DB2 /* SUVCrossovers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

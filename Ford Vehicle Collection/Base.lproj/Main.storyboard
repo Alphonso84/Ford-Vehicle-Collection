@@ -496,13 +496,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ford" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1FN-bf-6nr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ford" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1FN-bf-6nr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TS5-mO-Q88">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TS5-mO-Q88">
                                 <rect key="frame" x="0.0" y="44" width="375" height="665"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IE2-LN-7b7">
                                     <size key="itemSize" width="315" height="503"/>
@@ -511,7 +509,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="t9D-vu-XuR" customClass="CarCell" customModule="Ford_Vehicle_Collection" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="t9D-vu-XuR" customClass="HybridEVCell" customModule="Ford_Vehicle_Collection" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="81" width="315" height="503"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -531,9 +529,9 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFF-5P-grc">
-                                                                <rect key="frame" x="83" y="111" width="150" height="27"/>
+                                                                <rect key="frame" x="17" y="111" width="281" height="27"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="27" id="FLo-L1-chO"/>
+                                                                    <constraint firstAttribute="height" constant="27" id="Hte-wH-nkG"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -550,15 +548,15 @@
                                                             </label>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="rFF-5P-grc" firstAttribute="leading" secondItem="tIW-xy-PTg" secondAttribute="leading" constant="83" id="33R-S4-HVe"/>
-                                                            <constraint firstItem="ERM-nv-j2l" firstAttribute="top" secondItem="rFF-5P-grc" secondAttribute="bottom" constant="23" id="Bx5-Nj-mJ8"/>
+                                                            <constraint firstItem="ERM-nv-j2l" firstAttribute="top" secondItem="rFF-5P-grc" secondAttribute="bottom" constant="23" id="S0u-3b-n5e"/>
                                                             <constraint firstItem="PhZ-yE-qh1" firstAttribute="leading" secondItem="tIW-xy-PTg" secondAttribute="leading" constant="65" id="VkZ-VC-uK3"/>
                                                             <constraint firstItem="ERM-nv-j2l" firstAttribute="centerY" secondItem="tIW-xy-PTg" secondAttribute="centerY" id="cn7-V2-psN"/>
                                                             <constraint firstItem="PhZ-yE-qh1" firstAttribute="centerX" secondItem="tIW-xy-PTg" secondAttribute="centerX" id="fOi-XP-a42"/>
-                                                            <constraint firstItem="rFF-5P-grc" firstAttribute="centerX" secondItem="ERM-nv-j2l" secondAttribute="centerX" id="ghv-wS-cSC"/>
+                                                            <constraint firstItem="rFF-5P-grc" firstAttribute="trailing" secondItem="ERM-nv-j2l" secondAttribute="trailing" id="hk4-sB-sfU"/>
                                                             <constraint firstItem="ERM-nv-j2l" firstAttribute="centerX" secondItem="PhZ-yE-qh1" secondAttribute="centerX" id="jp1-aJ-hBX"/>
                                                             <constraint firstItem="PhZ-yE-qh1" firstAttribute="top" secondItem="ERM-nv-j2l" secondAttribute="bottom" constant="7" id="kIm-6D-eCC"/>
                                                             <constraint firstItem="ERM-nv-j2l" firstAttribute="leading" secondItem="tIW-xy-PTg" secondAttribute="leading" constant="17" id="syL-Ry-kRn"/>
+                                                            <constraint firstItem="rFF-5P-grc" firstAttribute="leading" secondItem="ERM-nv-j2l" secondAttribute="leading" id="vMU-Tf-kFH"/>
                                                         </constraints>
                                                     </view>
                                                     <blurEffect style="light"/>
@@ -585,6 +583,16 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TS5-mO-Q88" secondAttribute="trailing" id="1xc-1l-OUY"/>
+                            <constraint firstItem="TS5-mO-Q88" firstAttribute="top" secondItem="fHA-Ml-jd8" secondAttribute="top" id="3a3-LS-HcD"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1FN-bf-6nr" secondAttribute="bottom" constant="-83" id="YEA-Nb-4KF"/>
+                            <constraint firstItem="TS5-mO-Q88" firstAttribute="leading" secondItem="E5q-MS-W0F" secondAttribute="leading" id="bEM-uX-0DP"/>
+                            <constraint firstItem="1FN-bf-6nr" firstAttribute="top" secondItem="E5q-MS-W0F" secondAttribute="top" id="d57-LN-FAk"/>
+                            <constraint firstItem="TS5-mO-Q88" firstAttribute="trailing" secondItem="1FN-bf-6nr" secondAttribute="trailing" id="dYO-6k-W5T"/>
+                            <constraint firstItem="TS5-mO-Q88" firstAttribute="leading" secondItem="1FN-bf-6nr" secondAttribute="leading" id="feb-aK-C6m"/>
+                            <constraint firstAttribute="bottom" secondItem="TS5-mO-Q88" secondAttribute="bottom" constant="20" symbolic="YES" id="l6l-8Y-YAp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fHA-Ml-jd8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="EV" image="EV" selectedImage="EV" id="wXi-SE-4Jj" colorLabel="IBBuiltInLabel-Green">
@@ -593,7 +601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EuL-K5-tjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1039" y="843"/>
+            <point key="canvasLocation" x="-1039.2" y="842.36453201970448"/>
         </scene>
     </scenes>
     <resources>
