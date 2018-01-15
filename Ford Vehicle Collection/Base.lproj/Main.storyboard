@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -107,6 +108,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSG-vQ-mZC">
                                 <rect key="frame" x="16" y="44" width="49" height="48"/>
                                 <state key="normal" image="MenuButton"/>
+                                <connections>
+                                    <segue destination="anc-1W-A62" kind="presentation" modalPresentationStyle="overCurrentContext" id="wEz-KU-9rU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -228,6 +232,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ce-yj-S8L">
                                 <rect key="frame" x="16" y="44" width="49" height="48"/>
                                 <state key="normal" image="MenuButton"/>
+                                <connections>
+                                    <segue destination="anc-1W-A62" kind="presentation" modalPresentationStyle="overCurrentContext" id="w1R-07-WEZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -253,6 +260,86 @@
             </objects>
             <point key="canvasLocation" x="52" y="802"/>
         </scene>
+        <!--Menu-->
+        <scene sceneID="1WL-zd-7vT">
+            <objects>
+                <viewController id="anc-1W-A62" customClass="Menu" customModule="Ford_Vehicle_Collection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="EaJ-ah-0sY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" alpha="0.90000000000000002" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ws-m9-JZY">
+                                <rect key="frame" x="0.0" y="93" width="296" height="641"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ford_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qmQ-40-Kyf">
+                                        <rect key="frame" x="28" y="8" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="LqY-kA-Oeo"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="y95-w7-iXB">
+                                        <rect key="frame" x="28" y="171" width="240" height="403"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3p-2f-nKE">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="133"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <state key="normal" title="SHOP">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYb-tk-0jH">
+                                                <rect key="frame" x="0.0" y="135" width="240" height="133"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <state key="normal" title="OWNER">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCc-5D-nRb">
+                                                <rect key="frame" x="0.0" y="270" width="240" height="133"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <state key="normal" title="FINANCE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="y95-w7-iXB" firstAttribute="leading" secondItem="qmQ-40-Kyf" secondAttribute="leading" id="02Y-Z0-wSt"/>
+                                    <constraint firstItem="qmQ-40-Kyf" firstAttribute="top" secondItem="0ws-m9-JZY" secondAttribute="topMargin" id="1sd-PB-kbx"/>
+                                    <constraint firstItem="qmQ-40-Kyf" firstAttribute="centerX" secondItem="0ws-m9-JZY" secondAttribute="centerX" id="BuS-pV-ikL"/>
+                                    <constraint firstItem="y95-w7-iXB" firstAttribute="trailing" secondItem="qmQ-40-Kyf" secondAttribute="trailing" id="GSx-E5-gtJ"/>
+                                    <constraint firstItem="y95-w7-iXB" firstAttribute="top" secondItem="qmQ-40-Kyf" secondAttribute="bottom" constant="35" id="KvU-RM-oRg"/>
+                                    <constraint firstItem="y95-w7-iXB" firstAttribute="bottom" secondItem="0ws-m9-JZY" secondAttribute="bottomMargin" id="fWn-tQ-4Mw"/>
+                                    <constraint firstItem="qmQ-40-Kyf" firstAttribute="leading" secondItem="0ws-m9-JZY" secondAttribute="leading" constant="28" id="giU-dw-1Br"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="0ws-m9-JZY" firstAttribute="leading" secondItem="EaJ-ah-0sY" secondAttribute="leading" id="dN4-70-pX6"/>
+                            <constraint firstItem="1y0-Xh-SR9" firstAttribute="bottom" secondItem="0ws-m9-JZY" secondAttribute="bottom" constant="103" id="geh-kL-69M"/>
+                            <constraint firstItem="1y0-Xh-SR9" firstAttribute="trailing" secondItem="0ws-m9-JZY" secondAttribute="trailing" constant="79" id="nM7-kV-9QR"/>
+                            <constraint firstItem="0ws-m9-JZY" firstAttribute="top" secondItem="1y0-Xh-SR9" secondAttribute="top" constant="49" id="rHT-0a-opd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1y0-Xh-SR9"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Abq-uk-vF8" appends="YES" id="6zb-Ub-SRB"/>
+                        </connections>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8l-Cl-hCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Abq-uk-vF8">
+                    <connections>
+                        <action selector="userDidTap:" destination="anc-1W-A62" id="Ubq-Gg-llb"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-2050.4000000000001" y="-535.71428571428578"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rym-dQ-juR">
             <objects>
@@ -274,7 +361,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPE-mD-7cI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-930" y="81"/>
+            <point key="canvasLocation" x="-902" y="252"/>
         </scene>
         <!--PERFORMANCE-->
         <scene sceneID="Hqz-IF-qeg">
@@ -372,6 +459,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcc-y9-EFF">
                                 <rect key="frame" x="16" y="44" width="49" height="48"/>
                                 <state key="normal" image="MenuButton"/>
+                                <connections>
+                                    <segue destination="anc-1W-A62" kind="presentation" modalPresentationStyle="overCurrentContext" id="wa4-m4-dL0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -495,6 +585,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yb3-5f-tbY">
                                 <rect key="frame" x="16" y="44" width="49" height="48"/>
                                 <state key="normal" image="MenuButton"/>
+                                <connections>
+                                    <segue destination="anc-1W-A62" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="3Gm-Gi-6hM">
+                                        <segue key="commit" inheritsFrom="parent" id="P5g-x2-f63"/>
+                                        <segue key="preview" inheritsFrom="commit" id="v2T-uY-QDN"/>
+                                    </segue>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -518,7 +614,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NuE-f1-XUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1039.2" y="-702.70935960591135"/>
+            <point key="canvasLocation" x="-658" y="-1101"/>
         </scene>
         <!--EV-->
         <scene sceneID="2ds-Qa-7iA">
@@ -616,6 +712,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaR-k2-1kX">
                                 <rect key="frame" x="16" y="44" width="49" height="48"/>
                                 <state key="normal" image="MenuButton"/>
+                                <connections>
+                                    <segue destination="anc-1W-A62" kind="presentation" modalPresentationStyle="overCurrentContext" id="Fdq-Ro-UbK">
+                                        <segue key="commit" inheritsFrom="parent" id="KAe-6u-GAP"/>
+                                        <segue key="preview" inheritsFrom="commit" id="GZz-Pr-cff"/>
+                                    </segue>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -648,9 +750,13 @@
         <image name="Cars" width="25" height="25"/>
         <image name="EV" width="25" height="25"/>
         <image name="Ford" width="213" height="320"/>
+        <image name="Ford_logo" width="266" height="102"/>
         <image name="MenuButton" width="166" height="166"/>
         <image name="SUV" width="25" height="25"/>
         <image name="performance" width="25" height="25"/>
         <image name="trucks&amp;Vans" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3Gm-Gi-6hM"/>
+    </inferredMetricsTieBreakers>
 </document>
