@@ -1,5 +1,5 @@
 //
-//  MyCarsCell.swift
+//  DetailViewController.swift
 //  Ford Vehicle Collection
 //
 //  Created by user on 1/16/18.
@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class MyCarsCell: UITableViewCell {
-    @IBOutlet weak var myCarCellImage: UIImageView!
+class DetailViewController: UIViewController {
     
-    @IBOutlet weak var YearNameLabel: UILabel!
+    
+    
     
     
 }

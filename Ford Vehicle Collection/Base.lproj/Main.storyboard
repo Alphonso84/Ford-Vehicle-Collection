@@ -11,6 +11,11 @@
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--CARS-->
         <scene sceneID="tne-QT-ifu">
@@ -296,6 +301,9 @@
                                                 <state key="normal" title="My Cars">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="lXa-cV-4cP" kind="show" id="hNg-a9-Cdd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peX-F8-JC9">
                                                 <rect key="frame" x="0.0" y="212.99999999999997" width="267" height="104.66666666666666"/>
@@ -411,7 +419,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lyI-iG-ZWr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="91" width="375" height="721"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" editingAccessoryType="detailButton" rowHeight="67" id="Rfb-j6-Kqg" customClass="MyCarsCell" customModule="Ford_Vehicle_Collection" customModuleProvider="target">
@@ -428,7 +436,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018 Mustang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcL-1j-RhG">
-                                                    <rect key="frame" x="90" y="8" width="203" height="50"/>
+                                                    <rect key="frame" x="90" y="8" width="204" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -441,9 +449,13 @@
                                                 <constraint firstItem="mcL-1j-RhG" firstAttribute="leading" secondItem="Ab1-Ka-QSB" secondAttribute="trailing" constant="8" symbolic="YES" id="Kpi-g4-dp1"/>
                                                 <constraint firstItem="Ab1-Ka-QSB" firstAttribute="centerY" secondItem="KcP-JH-EiX" secondAttribute="centerY" id="b7Q-Mp-R8v"/>
                                                 <constraint firstItem="Ab1-Ka-QSB" firstAttribute="leading" secondItem="KcP-JH-EiX" secondAttribute="leading" id="e83-cq-Ufb"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="mcL-1j-RhG" secondAttribute="trailing" constant="67" id="wR3-DP-Vop"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mcL-1j-RhG" secondAttribute="trailing" constant="66" id="sWo-I0-YCZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="YearNameLabel" destination="mcL-1j-RhG" id="SkN-8g-9So"/>
+                                            <outlet property="myCarCellImage" destination="Ab1-Ka-QSB" id="yzp-py-rCF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -451,20 +463,35 @@
                                     <outlet property="delegate" destination="lXa-cV-4cP" id="r69-cQ-yy5"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Favorite Fords" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3g-qF-gMJ">
+                                <rect key="frame" x="73" y="44" width="233" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyy-OT-e91">
+                                <rect key="frame" x="16" y="48" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="PlH-LT-71g" kind="show" id="iZV-id-ZcD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lyI-iG-ZWr" firstAttribute="top" secondItem="rDN-5t-fcg" secondAttribute="top" id="3Sa-xN-50c"/>
-                            <constraint firstAttribute="trailing" secondItem="lyI-iG-ZWr" secondAttribute="trailing" id="Ki1-a0-IVz"/>
-                            <constraint firstAttribute="bottom" secondItem="lyI-iG-ZWr" secondAttribute="bottom" id="tl5-BE-YMA"/>
-                            <constraint firstItem="lyI-iG-ZWr" firstAttribute="leading" secondItem="rDN-5t-fcg" secondAttribute="leading" id="vlZ-ir-tyT"/>
+                            <constraint firstAttribute="bottom" secondItem="lyI-iG-ZWr" secondAttribute="bottom" id="SGw-PL-KYG"/>
+                            <constraint firstItem="lyI-iG-ZWr" firstAttribute="leading" secondItem="rDN-5t-fcg" secondAttribute="leading" id="ZA9-Lh-7fP"/>
+                            <constraint firstItem="lyI-iG-ZWr" firstAttribute="top" secondItem="UdL-6u-emv" secondAttribute="top" constant="47" id="tyF-0D-aWn"/>
+                            <constraint firstAttribute="trailing" secondItem="lyI-iG-ZWr" secondAttribute="trailing" id="uCU-zd-jEn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UdL-6u-emv"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qq-6r-OrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1554" y="1384"/>
+            <point key="canvasLocation" x="-1554.4000000000001" y="1383.9901477832514"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rym-dQ-juR">
@@ -614,6 +641,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBi-5n-WSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2207" y="-4"/>
+        </scene>
+        <!--DetailViewController-->
+        <scene sceneID="k9g-GL-vr1">
+            <objects>
+                <viewController title="DetailViewController" id="SIW-98-iB3" customClass="DetailViewController" customModule="Ford_Vehicle_Collection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwY-of-ie0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ford" translatesAutoresizingMaskIntoConstraints="NO" id="t6f-MN-lG5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJZ-gj-daK">
+                                <rect key="frame" x="16" y="184" width="343" height="444"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="urb-rP-d11">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="444"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2gZ-WW-beT">
+                                            <rect key="frame" x="8" y="44" width="327" height="327"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgr-j2-ZwZ">
+                                            <rect key="frame" x="107" y="379" width="125" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="125" id="3ha-h1-Lq2"/>
+                                                <constraint firstAttribute="height" constant="42" id="oOH-7c-H08"/>
+                                            </constraints>
+                                            <state key="normal" title="Add To My Cars">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Zgr-j2-ZwZ" firstAttribute="top" secondItem="2gZ-WW-beT" secondAttribute="bottom" constant="8" symbolic="YES" id="83N-zs-eda"/>
+                                        <constraint firstItem="Zgr-j2-ZwZ" firstAttribute="leading" secondItem="urb-rP-d11" secondAttribute="leading" constant="107" id="BYa-DG-a7j"/>
+                                        <constraint firstItem="2gZ-WW-beT" firstAttribute="trailing" secondItem="urb-rP-d11" secondAttribute="trailingMargin" id="Bvr-PG-fks"/>
+                                        <constraint firstAttribute="bottom" secondItem="Zgr-j2-ZwZ" secondAttribute="bottom" constant="23" id="GCT-hq-jJw"/>
+                                        <constraint firstItem="2gZ-WW-beT" firstAttribute="leading" secondItem="urb-rP-d11" secondAttribute="leadingMargin" id="heP-Ye-rOq"/>
+                                        <constraint firstItem="2gZ-WW-beT" firstAttribute="top" secondItem="urb-rP-d11" secondAttribute="top" constant="44" id="yxb-Qk-Xsb"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ford_logo" translatesAutoresizingMaskIntoConstraints="NO" id="de8-PT-hfG">
+                                <rect key="frame" x="67" y="44" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="t6f-MN-lG5" secondAttribute="trailing" id="Cas-V1-Pck"/>
+                            <constraint firstItem="t6f-MN-lG5" firstAttribute="leading" secondItem="gwY-of-ie0" secondAttribute="leading" id="EiF-Oj-wjb"/>
+                            <constraint firstItem="sJZ-gj-daK" firstAttribute="centerY" secondItem="t6f-MN-lG5" secondAttribute="centerY" id="FXe-sm-TWh"/>
+                            <constraint firstItem="de8-PT-hfG" firstAttribute="leading" secondItem="fCs-Rz-1VZ" secondAttribute="leading" constant="67" id="Ogm-lR-s9j"/>
+                            <constraint firstItem="sJZ-gj-daK" firstAttribute="top" secondItem="de8-PT-hfG" secondAttribute="bottom" constant="12" id="XjZ-bL-mTH"/>
+                            <constraint firstItem="de8-PT-hfG" firstAttribute="centerX" secondItem="t6f-MN-lG5" secondAttribute="centerX" id="gB3-bV-3nH"/>
+                            <constraint firstItem="fCs-Rz-1VZ" firstAttribute="bottom" secondItem="sJZ-gj-daK" secondAttribute="bottom" constant="150" id="gQF-iX-SPo"/>
+                            <constraint firstAttribute="bottom" secondItem="t6f-MN-lG5" secondAttribute="bottom" id="lig-wS-ctF"/>
+                            <constraint firstItem="de8-PT-hfG" firstAttribute="centerX" secondItem="sJZ-gj-daK" secondAttribute="centerX" id="nJc-VB-Zti"/>
+                            <constraint firstItem="sJZ-gj-daK" firstAttribute="leading" secondItem="gwY-of-ie0" secondAttribute="leadingMargin" id="nd7-dM-xsN"/>
+                            <constraint firstItem="de8-PT-hfG" firstAttribute="top" secondItem="fCs-Rz-1VZ" secondAttribute="top" id="nvq-1G-GhI"/>
+                            <constraint firstItem="t6f-MN-lG5" firstAttribute="top" secondItem="gwY-of-ie0" secondAttribute="top" id="r8S-AA-nIy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fCs-Rz-1VZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9D2-PA-zXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1666.4000000000001" y="-1484.4827586206898"/>
         </scene>
         <!--TRUCKSVANS-->
         <scene sceneID="PNT-oU-LEJ">
@@ -883,6 +978,7 @@
         <image name="trucks&amp;Vans" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="iZV-id-ZcD"/>
         <segue reference="6s0-la-cKA"/>
         <segue reference="Fdq-Ro-UbK"/>
     </inferredMetricsTieBreakers>
