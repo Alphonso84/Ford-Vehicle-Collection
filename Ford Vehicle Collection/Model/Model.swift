@@ -15,3 +15,5 @@ struct Vehicle {
     let name: String
     let price: String
 }
+
+var favortiteCars = [Vehicle]()
