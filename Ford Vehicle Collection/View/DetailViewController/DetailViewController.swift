@@ -11,7 +11,12 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet weak var DetailViewName: UILabel!
+    @IBOutlet weak var detailViewImage: UIImageView!
     
+    @IBAction func addToFavorites(_ sender: Any) {
+        favortiteCars.append(<#Vehicle#>)
+    }
     
     
     

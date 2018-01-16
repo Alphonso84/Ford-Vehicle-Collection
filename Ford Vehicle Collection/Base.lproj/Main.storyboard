@@ -668,16 +668,30 @@
                                                 <constraint firstAttribute="width" constant="125" id="3ha-h1-Lq2"/>
                                                 <constraint firstAttribute="height" constant="42" id="oOH-7c-H08"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                             <state key="normal" title="Add To My Cars">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="addToFavorites:" destination="SIW-98-iB3" eventType="touchUpInside" id="0Qu-2Z-eY8"/>
+                                            </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zp-o9-jJh">
+                                            <rect key="frame" x="66" y="0.0" width="211" height="36"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Zgr-j2-ZwZ" firstAttribute="top" secondItem="2gZ-WW-beT" secondAttribute="bottom" constant="8" symbolic="YES" id="83N-zs-eda"/>
                                         <constraint firstItem="Zgr-j2-ZwZ" firstAttribute="leading" secondItem="urb-rP-d11" secondAttribute="leading" constant="107" id="BYa-DG-a7j"/>
                                         <constraint firstItem="2gZ-WW-beT" firstAttribute="trailing" secondItem="urb-rP-d11" secondAttribute="trailingMargin" id="Bvr-PG-fks"/>
                                         <constraint firstAttribute="bottom" secondItem="Zgr-j2-ZwZ" secondAttribute="bottom" constant="23" id="GCT-hq-jJw"/>
+                                        <constraint firstItem="7Zp-o9-jJh" firstAttribute="centerX" secondItem="2gZ-WW-beT" secondAttribute="centerX" id="PtL-UU-jms"/>
+                                        <constraint firstItem="2gZ-WW-beT" firstAttribute="top" secondItem="7Zp-o9-jJh" secondAttribute="bottom" constant="8" symbolic="YES" id="ZVC-4m-k7X"/>
+                                        <constraint firstItem="7Zp-o9-jJh" firstAttribute="top" secondItem="urb-rP-d11" secondAttribute="top" id="cnn-0f-gmf"/>
+                                        <constraint firstItem="7Zp-o9-jJh" firstAttribute="leading" secondItem="urb-rP-d11" secondAttribute="leading" constant="66" id="eCd-NY-FL8"/>
                                         <constraint firstItem="2gZ-WW-beT" firstAttribute="leading" secondItem="urb-rP-d11" secondAttribute="leadingMargin" id="heP-Ye-rOq"/>
                                         <constraint firstItem="2gZ-WW-beT" firstAttribute="top" secondItem="urb-rP-d11" secondAttribute="top" constant="44" id="yxb-Qk-Xsb"/>
                                     </constraints>
@@ -705,6 +719,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fCs-Rz-1VZ"/>
                     </view>
+                    <connections>
+                        <outlet property="DetailViewName" destination="7Zp-o9-jJh" id="Du0-Dv-dhz"/>
+                        <outlet property="detailViewImage" destination="2gZ-WW-beT" id="QAd-GE-886"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9D2-PA-zXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
