@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailViewImage: UIImageView!
     
     @IBAction func addToFavorites(_ sender: Any) {
-        favortiteCars.append(<#Vehicle#>)
+        
     }
     
     

@@ -12,14 +12,14 @@ import UIKit
 class HybridEVs: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     var HybridCollection = [Vehicle]()
     
-    let FusionHybrid = Vehicle.init(pic: #imageLiteral(resourceName: "FusionHybrid"), year: 2018, name: "Fusion Hybrid SE", price: "From $26,245")
-    let CMaxEnergy = Vehicle.init(pic: #imageLiteral(resourceName: "C-Max Energy"), year: 2018, name: "CMax Energy", price: "From $27,129")
-    let FocusElectric = Vehicle.init(pic: #imageLiteral(resourceName: "Focus Electric"), year: 2018, name: "Focus Electric", price: "From $29,120")
+    let FusionHybrid = Vehicle(pic: #imageLiteral(resourceName: "FusionHybrid"), year: 2018, name: "Fusion Hybrid SE", price: "From $26,245")
+    let CMaxEnergy = Vehicle(pic: #imageLiteral(resourceName: "C-Max Energy"), year: 2018, name: "CMax Energy", price: "From $27,129")
+    let FocusElectric = Vehicle(pic: #imageLiteral(resourceName: "Focus Electric"), year: 2018, name: "Focus Electric", price: "From $29,120")
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-       return HybridCollection.count
+        return HybridCollection.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -28,13 +28,13 @@ class HybridEVs: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         cell.nameLabel.text = "\(HybridCollection[indexPath.row].year) \(HybridCollection[indexPath.row].name)"
         cell.priceLabel.text = HybridCollection[indexPath.row].price
         return cell
-    
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         UIStatusBarStyle.lightContent
         //return UIStatusBarStyle.default   // Make dark again
         HybridCollection.removeAll()
